@@ -60,10 +60,11 @@ If a player's **first 2 cards sum 9, 10 or 11** he may choose to double his bet.
 
 ## Features
 --------------
-- Dealer --> Pc.
-- Player --> Human giving input on what to do, how much to bet.
-- Deck --> Collection of 52 numbers, mimicking the cards found in a deck.
-- The play --> Random number of the collection of 52 numbers.
+- Dealer --> Pc. Hand will be stored in a list
+- Player --> Human giving input on what to do, how much to bet. Hand will be stored in a list
+- Deck --> Values from A to 2.
+- The play --> User will resolve his hand and then the dealer.
+
 
 
 ## Workflow
@@ -72,10 +73,9 @@ If a player's **first 2 cards sum 9, 10 or 11** he may choose to double his bet.
 2. Cards are dealt: both face up for the player, one of them facing down for the dealer.
 3. Check if the player has a natural blackjack.
 4. Check if the dealer has a natural blackjack.
-5. Check if the player has cards of the same denomination. If it's the case, ask him if he wants to split.
-6. Check if the player's cards add up to 9, 10 or 11. If they do, ask the player if he wants to double down.
-7. Ask the player if he wants to stand or hit.
-8. Check if player has doubled down. If he has and chooses to hit, after dealing him the card, the dealer plays his hand.
+5. Check if the player's cards add up to 9, 10 or 11. If they do, ask the player if he wants to double down.
+6. Ask the player if he wants to stand or hit.
+7. Check if player has doubled down. If he has and chooses to hit, after dealing him the card, the dealer plays his hand.
 9. If the player hits, check score.
 10. If the sum of the cards adds up to more than 21 points, the player losses.
 11. If the summ of cards is not equal or more than 21 points, player can choose to hit again.
